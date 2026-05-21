@@ -190,6 +190,15 @@ for ( i = 0; i < dt.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray-array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray-falses`][@stdlib/ndarray/falses]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with false values and having a specified shape and data type.</span>
+-   <span class="package-name">[`@stdlib/ndarray-trues-like`][@stdlib/ndarray/trues-like]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with true values and having the same shape and data type as a provided ndarray.</span>
+
 </section>
 
 <!-- /.related -->
@@ -269,6 +278,16 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+
+[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray-falses
+
+[@stdlib/ndarray/trues-like]: https://github.com/stdlib-js/ndarray-trues-like
+
+<!-- </related-links> -->
 
 </section>
 
