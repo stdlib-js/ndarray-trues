@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-trues
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import trues from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-trues@esm/index.mjs';
+var trues = require( '@stdlib/ndarray-trues' );
 ```
 
 #### trues( shape\[, options] )
@@ -60,8 +78,8 @@ import trues from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-trues@esm/index
 Creates an [ndarray][@stdlib/ndarray/ctor] filled with `true` values and having a specified shape and [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
 var arr = trues( [ 2, 2 ] );
 // returns <ndarray>[ [ true, true ], [ true, true ] ]
@@ -76,8 +94,8 @@ var dt = String( getDType( arr ) );
 The specified output [ndarray][@stdlib/ndarray/ctor] shape may be either an array-like object or an integer value.
 
 ```javascript
-import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
 var arr = trues( 2 );
 // returns <ndarray>[ true, true ]
@@ -100,8 +118,8 @@ The function accepts the following options:
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [`bool`][@stdlib/ndarray/dtypes] data type. To specify an alternative [data type][@stdlib/ndarray/dtypes], provide a `dtype` option.
 
 ```javascript
-import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
 var arr = trues( [ 2, 2 ], {
     'dtype': 'generic'
@@ -135,14 +153,9 @@ var dt = String( getDType( arr ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import trues from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-trues@esm/index.mjs';
+```javascript
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var trues = require( '@stdlib/ndarray-trues' );
 
 // Specify a list of data types:
 var dt = [
@@ -159,10 +172,6 @@ for ( i = 0; i < dt.length; i++ ) {
     });
     console.log( ndarray2array( arr ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -203,7 +212,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -266,17 +275,17 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-trues/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/esm
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray-falses/tree/esm
+[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray-falses
 
-[@stdlib/ndarray/trues-like]: https://github.com/stdlib-js/ndarray-trues-like/tree/esm
+[@stdlib/ndarray/trues-like]: https://github.com/stdlib-js/ndarray-trues-like
 
 <!-- </related-links> -->
 
